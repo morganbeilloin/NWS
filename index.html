@@ -98,6 +98,38 @@
     <footer>
         <p>&copy; 2024 Le Football Normand - Tous droits réservés.</p>
     </footer>
+            <section id="objectif">
+            <h2>Participez à notre sondage</h2>
+            <p>Nous aimerions connaître votre avis sur le football en Normandie. Cliquez sur le bouton ci-dessous pour participer.</p>
+            <button id="btn-sondage" onclick="trackObjective()">Participer au sondage</button>
+        </section>
+        <script>
+            function trackObjective() {
+                // Enregistrer un événement personnalisé dans Matomo
+                _mtm.push({'event': 'ParticiperSondage'});
+                alert('Merci pour votre participation !');
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Le Football Normand - Tous droits réservés.</p>
+    </footer>
+
+    <!-- Matomo Tag Manager -->
+    <script>
+      var _mtm = window._mtm = window._mtm || [];
+      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+      (function() {
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://cdn.matomo.cloud/morganb.matomo.cloud/container_e5Mp7hZs.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <button onclick="alert('Matomo Tag Manager actif')" style="position:fixed; bottom:10px; right:10px; padding:10px 20px; background:#00509e; color:#fff; border:none; border-radius:5px; cursor:pointer;">Vérifier Matomo</button>
+    <!-- End Matomo Tag Manager -->
+</body>
+</html>
+
 
     <!-- Matomo Tag Manager -->
     <script>
